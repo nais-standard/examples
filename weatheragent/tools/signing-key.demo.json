@@ -1,0 +1,7 @@
+{
+    "_warning": "DEMO SIGNING KEY \u2014 for the public NAIS WeatherAgent demo only. Do NOT reuse for any real agent identity.",
+    "alg": "EdDSA",
+    "kid": "ed25519:oc5a92N1h1Vg9PlnM8CrB0MAw3mMddFhZTrVuMkzceQ",
+    "public_key_b64": "oc5a92N1h1Vg9PlnM8CrB0MAw3mMddFhZTrVuMkzceQ=",
+    "secret_key_b64": "zHQ1ooZUrHF/21ShyZnQqt6kmxPVzStvwCN6rgqnpQ6hzlr3Y3WHVWD0+WczwKsHQwDDeYx10WFlOtW4yTNx5A=="
+}

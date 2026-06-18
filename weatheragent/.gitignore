@@ -1,0 +1,7 @@
+# Block real key material. The demo keypair (signing-key.demo.json) is
+# intentionally committed and explicitly allowed below.
+*.pem
+*.key
+tools/*.json
+!tools/signing-key.demo.json
+!tools/test-vector.json
