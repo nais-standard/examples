@@ -1,6 +1,6 @@
 {
     "nais": "1.0",
-    "cardVersion": 7,
+    "cardVersion": 8,
     "updated": "2026-06-17T00:00:00Z",
     "name": "WeatherAgent",
     "domain": "weatheragent.nais.id",
@@ -37,6 +37,26 @@
             "alerts": "0.0005"
         }
     },
+    "linkedAgents": [
+        {
+            "domain": "alerts.weatheragent.nais.id",
+            "relation": "partner",
+            "name": "Severe Weather Alerts",
+            "verified": true
+        },
+        {
+            "domain": "geocode.nais.id",
+            "relation": "provider",
+            "name": "Geocoding Service",
+            "verified": true
+        },
+        {
+            "domain": "radar.example.org",
+            "relation": "recommended",
+            "name": "Community Radar",
+            "verified": false
+        }
+    ],
     "mcpSnapshot": {
         "capturedAt": "2026-06-17T00:00:00Z",
         "toolsHash": "sha256:16852823357521116bedaaa6a6bea8cf4053248840a02cee249d9f76ee76a1a8",
@@ -128,6 +148,6 @@
     "signature": {
         "alg": "EdDSA",
         "kid": "ed25519:oc5a92N1h1Vg9PlnM8CrB0MAw3mMddFhZTrVuMkzceQ",
-        "jws": "eyJhbGciOiJFZERTQSIsImtpZCI6ImVkMjU1MTk6b2M1YTkyTjFoMVZnOVBsbk04Q3JCME1BdzNtTWRkRmhaVHJWdU1remNlUSJ9..p1BK4OjSUw-j2gs7mrXuYVuSxTlprd3LSKk2vyUX1SyjUk-uuUUt-_0N-s7_7v_FNUDQpZ9Dfb82JsXYXKeCAQ"
+        "jws": "eyJhbGciOiJFZERTQSIsImtpZCI6ImVkMjU1MTk6b2M1YTkyTjFoMVZnOVBsbk04Q3JCME1BdzNtTWRkRmhaVHJWdU1remNlUSJ9..bsRSzijaKjDSxxKFXTg-NgLw_r1i6SB2AF_8h4X5AZd-ghbXFd1XSYk68AHp0gMs3v3JRWrhScrp7gYfaqpmBg"
     }
 }

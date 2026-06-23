@@ -197,7 +197,7 @@ function build_unsigned_card(): array
 
     return [
         'nais'        => '1.0',
-        'cardVersion' => 7,
+        'cardVersion' => 8,
         'updated'     => STAMP,
 
         'name'        => 'WeatherAgent',
@@ -222,6 +222,16 @@ function build_unsigned_card(): array
                 'current_weather' => '0.0005',
                 'alerts'          => '0.0005',
             ],
+        ],
+
+        // Pointers to related agents — partners, providers, recommendations.
+        // Advisory only: 'verified' is the operator's signed attestation of an
+        // established relationship; a client MUST still resolve and verify each
+        // linked agent's own card before relying on it.
+        'linkedAgents' => [
+            ['domain' => 'alerts.weatheragent.nais.id', 'relation' => 'partner',     'name' => 'Severe Weather Alerts', 'verified' => true],
+            ['domain' => 'geocode.nais.id',             'relation' => 'provider',    'name' => 'Geocoding Service',     'verified' => true],
+            ['domain' => 'radar.example.org',           'relation' => 'recommended', 'name' => 'Community Radar',        'verified' => false],
         ],
 
         'mcpSnapshot' => [
